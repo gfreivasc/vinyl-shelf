@@ -1,0 +1,12 @@
+# Place your dependencies and versions in this file
+[versions]
+spring-boot = "3.3.0"
+spring-depman = "1.1.5"
+
+[libraries]
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-depman = { id = "io.spring.dependency-management", version.ref = "spring-depman" }
