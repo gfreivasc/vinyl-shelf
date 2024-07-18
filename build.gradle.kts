@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.depman)
-    id("java")
+    java
+    checkstyle
 }
 
 group = "com.betanunes.vinylshelf"
@@ -20,6 +21,10 @@ repositories {
 dependencies {
     implementation(libs.spring.boot.web)
     testImplementation(libs.spring.boot.test)
+}
+
+checkstyle {
+    configFile = file("checkstyle/checkstyle.xml")
 }
 
 //test {

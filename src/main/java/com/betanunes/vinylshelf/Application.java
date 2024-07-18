@@ -9,7 +9,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         ApplicationContext ctx = SpringApplication.run(Application.class, args);
 
         System.out.println("Let's inspect the beans provided by Spring Boot:");
